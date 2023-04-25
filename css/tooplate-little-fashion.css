@@ -3,6 +3,7 @@
   --primary-color:              #00CBFF;
   --section-bg-color:           #f0f8ff;
   --dark-color:                 #000000;
+  --dark-color1:                #fff;
   --grey-color:                 #d0d1d1;
   --p-color:                    #717275;
 
@@ -350,7 +351,7 @@ strong {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  display: inline-block;
+  display: inline-block;  
   padding: 0;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
@@ -413,6 +414,7 @@ strong {
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: var(--dark-color1);
   background: transparent;
 }
 
@@ -425,15 +427,17 @@ strong {
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  background: var(--dark-color1);
   transform: rotate(45deg);
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  background: var(--dark-color1);
   transform: rotate(-45deg);
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
+  background: var(--dark-color1);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -449,7 +453,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--dark-color);
+  background: var(--dark-color1);
   width: 30px;
   height: 2px;
   content: '';
